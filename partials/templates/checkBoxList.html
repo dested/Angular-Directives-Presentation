@@ -1,0 +1,9 @@
+﻿<label ng-repeat="name in collection">
+    <input 
+        type="checkbox"
+        name="selected{{collectionId}}[]"
+        value="{{name}}"
+        ng-checked="selection.indexOf(name) > -1"
+        ng-click="toggleSelection(name)" /> 
+    {{name}}
+</label>

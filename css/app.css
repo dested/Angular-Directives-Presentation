@@ -1,0 +1,116 @@
+/* app css stylesheet */
+
+.menu
+{
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+    .menu:before
+    {
+        content: "[";
+    }
+
+    .menu:after
+    {
+        content: "]";
+    }
+
+    .menu > li
+    {
+        display: inline;
+    }
+
+        .menu > li:before
+        {
+            content: "|";
+            padding-right: 0.3em;
+        }
+
+        .menu > li:nth-child(1):before
+        {
+            content: "";
+            padding: 0;
+        }
+
+
+pre
+{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background: #faf8f0;
+    display: block;
+    padding: 0.5em 1em;
+    border: 1px solid #bebab0;
+    overflow: hidden;
+}
+
+
+.fancy-list
+{
+    background-color: #DADADA;
+    padding: 2px;
+    color: #DADADA;
+    position: relative;
+}
+
+    .fancy-list .fancy-list-item
+    {
+        background-color: #0F1F4f;
+        padding: 6px;
+    }
+
+    .fancy-list .fancy-list-item-selected
+    {
+        background-color: #3063FC;
+    }
+
+    .fancy-list .button-in-listbox
+    {
+        position: absolute;
+        right: 10px;
+    }
+
+.window
+{
+    background-color: #444444;
+    border-radius: 5px;
+    border: 1px solid #0f1f4f;
+    padding: 15px;
+}
+
+    .window h1
+    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 28px;
+        margin: 0;
+        margin-bottom: 6px;
+        color: white;
+        font-weight: 800;
+    }
+
+    .window .inner-window
+    {
+        margin: 0px;
+        padding: 10px;
+        background-color: #EDEDED;
+        border-radius: 5px;
+        position: relative;
+    }
+
+        .window .inner-window .right
+        {
+            position: absolute;
+            right: 10px;
+        }
+
+    .window .control-buttons
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }

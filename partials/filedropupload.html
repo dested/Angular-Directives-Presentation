@@ -1,0 +1,8 @@
+<label for-next>Upload Image</label>
+<file-dropzone style="display:block; width:200px; height:200px; background-color:green; border:solid 2px black;" image-loaded="model.imageLoaded(loadedImage)"></file-dropzone>
+
+<img ng-src="{{model.imageContent.content}}"/>
+
+<pre>
+{{model|json}}
+</pre>

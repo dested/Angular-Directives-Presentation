@@ -1,0 +1,17 @@
+<section>
+    <label for-next>First Name:</label><input type="text" ng-model="model.firstName" /><br/>
+    <label for-next>Last Name:</label><input type="text" ng-model="model.lastName" /><br/>
+    <label for-next>Age:</label><input type="text" ng-model="model.age" /><br/>
+    <label for-next>Job:</label><input type="text" ng-model="model.job" /><br/>
+</section>
+
+<pre>
+Hello {{model.firstName}} {{model.lastName}}. 
+    You are {{model.age}} years old, and you work as a {{model.job}}.
+</pre>
+
+
+<br/>
+<pre>
+{{model|json}}
+</pre>

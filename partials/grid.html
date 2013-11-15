@@ -1,0 +1,7 @@
+<button ng-click="model.toggleGrid()">Toggle Grid</button><br/>
+<label for-next>Scale X</label><input type="number" ng-model="model.scale.x"/><br/>
+<label for-next>Scale Y</label><input type="number" ng-model="model.scale.y"/>
+
+<div style="height:500px;">
+    <div  grid="model.scale" show-grid="model.showGrid"></div>
+</div>
